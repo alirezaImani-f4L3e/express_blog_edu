@@ -1,0 +1,58 @@
+<!-- Page Headings Start -->
+        <div class="row justify-content-between align-items-center mb-10">
+          <!-- Page Heading Start -->
+          <div class="col-12 col-lg-auto mb-20">
+            <div class="page-heading">
+              <h3 class="title">کاربران <span>/ ایجاد کاربر جدید</span></h3>
+            </div>
+          </div>
+          <!-- Page Heading End -->
+
+          <!-- Page Button Group End -->
+        </div>
+        <!-- Page Headings End -->
+
+        <div class="row mbn-30">
+          <!-- Revenue Statistics Chart Start -->
+          <div class="col-md-12 mb-30">
+            <div class="box">
+              <div class="box-head">
+                <div class="row">
+                  <h4 class="title">اطلاعات مطلب</h4>
+                </div>
+              </div>
+              <div class="box-body">
+                <form method="POST" action="/admin/users/store">
+                  
+                    <div class="col-12 mb-20">
+                      <input type="text" id="formLayoutUsername3" class="form-control" placeholder="نام کاربر" name="name"/>
+                    </div>
+                    <div class="col-12 mb-20">
+                      <input type="email" id="formLayoutEmail3" class="form-control" placeholder="ایمیل" name="email"/>
+                    </div>
+
+                    <div class="col-12 mb-20">
+                      <input type="password" id="formLayoutEmail3" class="form-control" placeholder="رمز عبور" name="password"/>
+                    </div>
+                    
+                  
+
+                    <div class="col-12 mb-20">
+                      <h6 class="mb-15">نقش کاربری</h6>
+                      <div class="form-group">
+                        <label class="inline"><input name="role" type="radio" value="0" checked/>کاربر عادی</label>
+                        <label class="inline"><input name="role" type="radio" value="1"/>نویسنده</label>
+                        <label class="inline"><input name="role" type="radio" value="2"/>مدیر</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-20">
+                      <input type="submit" value="ذخیره سازی" class="button button-primary" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Revenue Statistics Chart End -->
+        </div>
