@@ -10,12 +10,12 @@
     "license": "ISC",
     "_moduleAliases": {
         "@root": ".",
-        "@models": "models",
-        "@controllers": "controllers",
-        "@routes": "routes",
-        "@services": "services",
+        "@models": "app/models",
+        "@controllers": "app/controllers",
+        "@routes": "app/routes",
+        "@services": "app/services",
         "@dataBase": "database",
-        "@middlewares": "middlewares"
+        "@middlewares": "app/middlewares"
     },
     "dependencies": {
         "bcrypt": "^5.0.1",
@@ -24,13 +24,16 @@
         "cookie-parser": "^1.4.5",
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
+        "express-fileupload": "^1.2.1",
         "express-handlebars": "^5.3.2",
         "express-mysql-session": "^2.1.6",
         "express-session": "^1.17.2",
         "gravatar": "^1.8.1",
         "jalali-moment": "^3.3.10",
+        "lodash": "^4.17.21",
         "module-alias": "^2.2.2",
         "mysql2": "^2.2.5",
-        "nodemon": "^2.0.12"
+        "nodemon": "^2.0.12",
+        "uuid": "^8.3.2"
     }
 }

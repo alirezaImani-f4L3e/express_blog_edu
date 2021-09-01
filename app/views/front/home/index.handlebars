@@ -1,0 +1,20 @@
+{{#each posts}}
+<div class="blog-post">
+                    <a href="/p/{{this.id}}"><img class="rounded mb-lg-5 mb-4" src="/static/upload/thumbNails/{{this.thumbNail}}" alt="card image" /></a>
+                    <h3 class=""><a href="/p/{{this.id}}">{{this.title}}</a></h3>
+                    <div class="meta font-lora my-4">
+                        <a href="#">{{this.full_name}}</a>
+                        <span class="meta-separator"></span>
+                        <a href="#">{{this.created_at_jalali}}</a>
+                    </div>
+                    <p>{{this.summary}}</p>
+                </div>
+{{/each}}
+
+<div class="pagination justify-content-center">
+                    <a href="/?page={{pagination.previousPage}}" class="btn btn-dark {{#if pagination.isFirst}}disabled{{/if}}"><i class="fa fa-angle-left"></i></a>
+                    <div class="h6 mt-2 mx-4">
+                        {{pagination.page}}از {{pagination.totalPages}}
+                    </div>
+                    <a href="/?page={{pagination.nextPage}}" class="btn btn-dark {{#if pagination.isLast}}disabled{{/if}}"><i class="fa fa-angle-right"></i></a>
+                </div>

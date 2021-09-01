@@ -1,0 +1,7 @@
+<div class="comments">
+                    <h2 class="comments-title"> نظرات</h2>
+                    {{#if noComment}}
+                    <h5>دیدگاهی ثبت نشده است.</h5>
+                    {{/if}}
+                    {{>comments/list comments=this.comments}}
+                </div>
